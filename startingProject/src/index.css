@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #f1f5f8;
+  color: #222;
+}
+h1 {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.booklist {
+  width: 90vw;
+  max-width: 1000px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.book img {
+  width: 100%;
+  object-fit: cover;
+}
+.book h2 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+/* JSX - CSS (inline styles) */
+/* in the presence of inline-style, external-css styles won't apply */
+/* style prop */
+/* .book h4 {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+} */
+
+/* video-16 */
+/* we use these styles from here after removing inline styles from our element */
+.book h4 {
+  color: #617d98;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  letter-spacing: 2px;
+}
+/* styling children */
+.book p {
+  margin: 1rem 0 0.5rem;
+}
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #c45500;
+  color: white;
+  font-size: 1rem;
+  padding: 0.45rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+    /* align-items: start; */
+  }
+}
+/* @media (max-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+}
+@media (max-width: 500px) {
+  .booklist {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: start;
+  }
+} */

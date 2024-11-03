@@ -1,0 +1,5 @@
+{
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.snippets.codeActions.enabled": false,
+    "emmet.showSuggestionsAsSnippets": true
+}
